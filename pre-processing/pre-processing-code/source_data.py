@@ -9,7 +9,7 @@ from s3_md5_compare import md5_compare
 
 def source_dataset():
     bea_dataset_name = os.getenv('BEA_DATASET_NAME', 'regional')
-    table_name = os.getenv('BEA_TABLE_NAME', 'CAINC4')
+    table_name = os.getenv('BEA_TABLE_NAME', 'CAINC1')
     source_dataset_url = "https://apps.bea.gov/{}/zip/{}.zip".format(bea_dataset_name, table_name)
     
     response = None
